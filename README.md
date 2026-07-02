@@ -1,26 +1,43 @@
 ![V-SeMo Logo](v-semo_repo_card.png)
-[V-SeMo – Teaching General Reletivity with virtual sector Models](https://v-semo.com/)
+[V-SeMo – Teaching General Relativity with virtual sector Models](https://v-semo.com/)
 
-[V-SeMo](https://v-semo.com/) is a canvas tool based on fabric.js with the purpose to teach General Relativity with virtual sector models.
+[V-SeMo](https://v-semo.com/) is a canvas tool based on fabric.js with the purpose to teach
+General Relativity with virtual sector models.
 
-## How to get started
+## Quickstart
 
-Get your local clone of the repository or decompress the downloaded zip/tarball to a local folder
+Clone the repository:
 ```
-git clone https://www.uni-hildesheim.de/gitlab/spacetimetravel/v-semo.git
+git clone https://github.com/SvenWeissenborn/V-SeMo-Public.git
 ```
 
-Currently, V-SeMo requires to be delivered by a webserver. A simple way to achieve this for local testing purposes is to launch the simple http server provided by python 3 directly inside the folder containing the just cloned or extracted sources:
+V-SeMo needs to be delivered by a webserver. For local testing, the simple http server
+provided by Python 3 works well — run it from inside the cloned folder:
 ```
 python3 -m http.server 8080
 ```
 
-Then, launch your favorite web-browser and direct it to:
+Then open your browser at:
 ```
-http://localhost:8080/wormhole_circ_3_8.html?showExerciseBox=1&buildStartMarks=1
+http://localhost:8080/sp_map.html?showExerciseBox=1&buildStartMarks=1
 ```
 
-Note that there are a bunch of other `*.html` files in the folder to try and investigate. They reference other script files, especially the ones in `./parameter_files` and `./exercises`, which define the parameters of the sector model and the text and behaviour of the so-called "excercise box". A more detailed documentation of the various URL parameters is still missing, but you may want to take a look into `./url_variabled.js`
+This loads a sphere-based sector model with a guided exercise box.
+
+There are many other `*.html` files in the repo root to explore — each one references a
+different sector model geometry and (optionally) a different guided exercise.
+
+## Documentation
+
+Further documentation — how the various `*.html` files are wired together, how to create a
+new sector model, how to write a new guided exercise, and a full reference of the available
+URL parameters — lives in the [Wiki](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki):
+
+- [Quickstart](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki/Quickstart)
+- [Parameter-Files](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki/Parameter-Files)
+- [Geometrie-Module](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki/Geometrie-Module)
+- [Exercise-Boxen](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki/Exercise-Boxen)
+- [URL-Parameter](https://github.com/SvenWeissenborn/V-SeMo-Public/wiki/URL-Parameter)
 
 ## V-SeMo in Action
 ![V-Semo used on a tablet device](documentation/images/tablet_line.png)
